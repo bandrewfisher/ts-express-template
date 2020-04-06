@@ -16,5 +16,13 @@
   },
   "plugins": ["@typescript-eslint"],
   "noInlineConfig": true,
+  "overrides": [
+    {
+      "files": ["tests/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "rules": {}
 }

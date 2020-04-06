@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --detectOpenHandles --colors",
     "lint": "eslint src/** tests/** --fix --cache",
     "build": "rimraf ./build && tsc",
     "start": "ts-node-dev --respawn --transpileOnly src/index.ts",
@@ -13,12 +13,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.2.7",
+    "jest-html-reporters": "^1.2.1",
     "rimraf": "^3.0.2",
+    "ts-jest": "^25.3.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
   },
