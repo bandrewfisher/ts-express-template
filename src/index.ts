@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 app.get('/', (_req, res) => {
-  res.send('Hello world!');
+  res.send('Hello Typescript world!');
 });
 
 const PORT = process.env.PORT || 5000;

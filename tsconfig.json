@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["ES2016"],
+    "lib": ["DOM", "ES2016"],
     "allowJs": true,
     "checkJs": true,
     "sourceMap": true,

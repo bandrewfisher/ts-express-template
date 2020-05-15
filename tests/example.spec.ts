@@ -1,5 +1,6 @@
 describe('example', () => {
-  it('runs tests', () => {
-    expect(true).toBeTruthy();
+  it('works', () => {
+    const message: string = 'Hello';
+    expect(message).toBe('Hello');
   });
 });
